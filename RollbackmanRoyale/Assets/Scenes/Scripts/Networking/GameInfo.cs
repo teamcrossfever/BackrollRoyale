@@ -1,6 +1,6 @@
 ﻿using UnityGGPO;
 
-namespace Sinistral.GGPO
+namespace Sinistral.Network
 {
     public enum PlayerConnectState
     {
@@ -22,6 +22,14 @@ namespace Sinistral.GGPO
         public int controllerId;
     };
 
+    public struct ChecksumInfo
+    {
+        public int framenumber;
+        public int checksum;
+
+        public override string ToString() => framenumber.ToString() + " " + checksum.ToString("X2");
+    }
+
     public class GameInfo
     {
         public PlayerConnectionInfo[] players;
@@ -29,11 +37,7 @@ namespace Sinistral.GGPO
 
         public ChecksumInfo now;
         public ChecksumInfo periodic;
-        public struct ChecksumInfo
-        {
-            public int framenumber;
-            public int checksum;
-        }
+
 
         public void SetConnectState(int handle, PlayerConnectState state)
         {

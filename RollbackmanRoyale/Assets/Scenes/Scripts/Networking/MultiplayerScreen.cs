@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 using TMPro;
 
-namespace Sinistral.GGPO
+namespace Sinistral.Network
 {
     public class MultiplayerScreen : MonoBehaviour
     {

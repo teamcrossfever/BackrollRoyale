@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityGGPO;
 
 
-namespace Sinistral.GGPO
+namespace Sinistral.Network
 {
     public abstract class NetworkGameManager : MonoBehaviour
     {
