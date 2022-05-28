@@ -86,7 +86,7 @@ public class GgpoPerformancePanel : MonoBehaviour, IPerfUpdate
 
     }
 
-    void ggpoutil_perfmon_update(GGPONetworkStats[] statss)
+    void IPerfUpdate.ggpoutil_perfmon_update(GGPONetworkStats[] statss)
     {
         int num_players = statss.Length;
         int i;
