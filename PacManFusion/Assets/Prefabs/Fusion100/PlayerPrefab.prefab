@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 812025674702520689}
   - component: {fileID: 812025674702520695}
   - component: {fileID: 812025674702520688}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 812025675440534445}
   - component: {fileID: 812025675440534446}
   - component: {fileID: 3336656211797652446}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,11 +189,11 @@ MonoBehaviour:
     RotBlendStart: 0.1
     RotBlendEnd: 0.5
     RotTeleportRadians: 1.5
-  gravity: -20
+  gravity: -9.81
   jumpImpulse: 8
   acceleration: 10
   braking: 10
-  maxSpeed: 2
+  maxSpeed: 4
   rotationSpeed: 15
   _IsGrounded: 0
   _Velocity: {x: 0, y: 0, z: 0}
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 812025676370061797}
   - component: {fileID: 812025676370061798}
   - component: {fileID: 812025676370061799}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

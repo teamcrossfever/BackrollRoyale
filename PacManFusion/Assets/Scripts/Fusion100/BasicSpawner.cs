@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Linq;
 using UnityEngine;
 using Fusion;
 using Fusion.Sockets;
@@ -13,6 +14,14 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     [SerializeField] private NetworkPrefabRef _playerPrefab;
     private Dictionary<PlayerRef, NetworkObject> _spawnedCharacters = new Dictionary<PlayerRef, NetworkObject>();
 
+    //Inputs
+    bool _mouseButton0;
+
+
+    void Start()
+    {
+        Screen.SetResolution(640, 480, false);
+    }
     private void OnGUI()
     {
         if (_runner == null)
@@ -27,6 +36,11 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
                 StartGame(GameMode.Client);
             }
         }
+
+        if (_runner!=null && _runner.IsRunning)
+        {
+            GUI.Label(new Rect(10, 10, 100, 200), "Player Count: " + _runner.ActivePlayers.Count());
+        }
     }
 
     async void StartGame(GameMode mode)
@@ -39,8 +53,15 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
             GameMode = mode,
             SessionName = "TestRoom",
             Scene = SceneManager.GetActiveScene().buildIndex,
-            SceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>()
+            SceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>(),
+            PlayerCount = 50,
+             
         });
+    }
+
+    private void Update()
+    {
+        _mouseButton0 = _mouseButton0 | Input.GetMouseButton(0);
     }
     public void OnConnectedToServer(NetworkRunner runner)
     {
@@ -74,7 +95,28 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
     public void OnInput(NetworkRunner runner, NetworkInput input)
     {
-       
+        var data = new NetworkInputData();
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            data.direction += Vector3.forward;
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            data.direction += Vector3.back;
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            data.direction += Vector3.left;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            data.direction += Vector3.right;
+        }
+
+        input.Set(data);
     }
 
     public void OnInputMissing(NetworkRunner runner, PlayerRef player, NetworkInput input)
