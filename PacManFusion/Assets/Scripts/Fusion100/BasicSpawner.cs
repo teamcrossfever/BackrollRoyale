@@ -16,6 +16,7 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
     //Inputs
     bool _mouseButton0;
+    bool _mouseButton1;
 
 
     void Start()
@@ -62,6 +63,7 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     private void Update()
     {
         _mouseButton0 = _mouseButton0 | Input.GetMouseButton(0);
+        _mouseButton1 = _mouseButton1 | Input.GetMouseButton(1);
     }
     public void OnConnectedToServer(NetworkRunner runner)
     {
@@ -114,6 +116,18 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
         if (Input.GetKey(KeyCode.D))
         {
             data.direction += Vector3.right;
+        }
+
+        if (_mouseButton0)
+        {
+            data.buttons |= NetworkInputData.MOUSEBUTTON1;
+            _mouseButton0 = false;
+        }
+
+        if (_mouseButton1)
+        {
+            data.buttons |= NetworkInputData.MOUSEBUTTON2;
+            _mouseButton1 = false;
         }
 
         input.Set(data);
