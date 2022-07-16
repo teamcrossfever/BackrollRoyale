@@ -27,12 +27,29 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     {
         if (_runner == null)
         {
-            if(GUI.Button(new Rect(0,0,200,40), "Host"))
+            int yloc = 0;
+            if(GUI.Button(new Rect(0,yloc,200,40), "Server Dedicate"))
+            {
+                StartGame(GameMode.Server);
+            }
+
+            yloc += 40;
+
+            if (GUI.Button(new Rect(0, yloc, 200, 40), "Host"))
             {
                 StartGame(GameMode.Host);
             }
 
-            if (GUI.Button(new Rect(0, 40, 200, 40), "Join"))
+            yloc += 40;
+
+            if (GUI.Button(new Rect(0, yloc, 200, 40), "Shared Host"))
+            {
+                StartGame(GameMode.Host);
+            }
+
+            yloc += 40;
+
+            if (GUI.Button(new Rect(0, yloc, 200, 40), "Join"))
             {
                 StartGame(GameMode.Client);
             }

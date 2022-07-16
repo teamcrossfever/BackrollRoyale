@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using Fusion;
+using UnityEngine.UI;
 public class PlayerNet : NetworkBehaviour
 {
     private NetworkCharacterControllerPrototype _cc;
@@ -15,9 +16,35 @@ public class PlayerNet : NetworkBehaviour
     [Networked]
     private TickTimer delay { get; set; }
 
+    [Networked(OnChanged = nameof(OnBallSpawned))]
+    public NetworkBool spawned { get; set; }
+
+
+    private Text _message;
+
+    //Mat
+    private Material _material;
+    public Material Material {
+        get
+        {
+            if (_material == null)
+                _material = GetComponentInChildren<MeshRenderer>().material;
+
+            return _material;
+        }
+    }
+
     private void Awake()
     {
         _cc = GetComponent<NetworkCharacterControllerPrototype>();
+    }
+
+    private void Update()
+    {
+        if(Object.HasInputAuthority && Input.GetKeyDown(KeyCode.R))
+        {
+            RPC_SendMessage("HELLO PEOPLES");
+        }
     }
 
     public override void FixedUpdateNetwork()
@@ -42,6 +69,7 @@ public class PlayerNet : NetworkBehaviour
                         //Initalize before synchronizing it
                         o.GetComponent<Ball>().Init();
                     });
+                    spawned = !spawned;
                 }
                 else if ((data.buttons & NetworkInputData.MOUSEBUTTON2) != 0)
                 {
@@ -50,10 +78,41 @@ public class PlayerNet : NetworkBehaviour
                     {
                         o.GetComponent<PhysxBall>().Init(10 * _forward);
                     });
+                    spawned = !spawned;
                 }
             }
 
             
         }
+    }
+
+    public override void Render()
+    {
+        Material.color = Color.Lerp(Material.color, Color.blue, Time.deltaTime);
+    }
+
+    public static void OnBallSpawned(Changed<PlayerNet> changed)
+    {
+        changed.Behaviour.Material.color = Color.white;
+    }
+
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
+    public void RPC_SendMessage(string message, RpcInfo info = default)
+    {
+        if (!_message)
+        {
+            _message = FindObjectOfType<Text>();
+        }
+
+        if (info.IsInvokeLocal)
+        {
+            message = $"You said: {message}\n";
+        }
+        else
+        {
+            message = $"Some other player: {message}\n";
+        }
+
+        _message.text += message;
     }
 }
