@@ -7,12 +7,23 @@ public class Pacman : MonoBehaviour
 {
     Transform _transform;
     public float inputThreshold = 0.5f;
+
+    //layers
+    [SerializeField]
+    LayerMask collectablesMask;
+
     Player cInput;
     Vector2 inputDirection;
     Movement movement;
 
+    Collider2D[] collisions = new Collider2D[4];
+
+    GameManager gm;
+
     private void Start()
     {
+        gm = FindObjectOfType<GameManager>();
+
         _transform = transform;
 
         cInput = Rewired.ReInput.players.GetPlayer(0);
@@ -43,5 +54,31 @@ public class Pacman : MonoBehaviour
 
         float angle = Mathf.Atan2(movement.Direction.y, movement.Direction.x);
         _transform.rotation = Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward);
+    }
+
+    private void FixedUpdate()
+    {
+        HandleCollisions();
+    }
+
+    private void HandleCollisions()
+    {
+        int hitCount = Physics2D.OverlapCircleNonAlloc(_transform.position, 0.5f, collisions,collectablesMask);
+        if (hitCount > 0)
+        {
+            Debug.Log("COLLISIONS");
+            for(int i=0; i<collisions.Length; i++)
+            {
+                var col = collisions[i];
+                if (!col)
+                    continue;
+
+                if (col.CompareTag(Tags.Pellet))
+                {
+                    var pellet = col.GetComponent<Pellet>();
+                    gm.PelletEaten(pellet);
+                }
+            }
+        }
     }
 }

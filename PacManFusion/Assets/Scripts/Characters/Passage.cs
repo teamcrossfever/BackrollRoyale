@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Passage : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform connection;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
+        Vector3 pos = collision.transform.position;
+        pos.x = connection.position.x;
+        pos.y = connection.position.y;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        collision.transform.position = pos;
     }
 }

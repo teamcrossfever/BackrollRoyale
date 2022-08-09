@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7962843054309628133}
   - component: {fileID: 8827403295482828607}
   - component: {fileID: 84834574643484427}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PowerPellet
-  m_TagString: Untagged
+  m_TagString: Pellet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.25, y: 0.25}
   m_EdgeRadius: 0
 --- !u!114 &84834574643484427
 MonoBehaviour:
@@ -125,3 +125,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPower: 1
+  points: 10

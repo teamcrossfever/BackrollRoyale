@@ -11,8 +11,16 @@ public class GameManager : MonoBehaviour
     public int Score { get; private set; }
     public int Lives { get; private set; }
 
+    [Header("Sounds")]
+    [SerializeField]
+    AudioClip[] munchsfx;
+    int currentMunch = 0;
+
+    AudioSource audioPlayer;
+
     private void Start()
     {
+        audioPlayer = GetComponent<AudioSource>();
         pellets = FindObjectsOfType<Pellet>();
         NewGame();
     }
@@ -94,4 +102,23 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
     }
+
+    public void PelletEaten(Pellet pellet)
+    {
+        pellet.Collect();
+
+        PlayOneShot(munchsfx[currentMunch]);
+        currentMunch = currentMunch == 0 ? 1 : 0;
+
+        if (pellet.isPower)
+        {
+
+        }
+    }
+
+    void PlayOneShot(AudioClip clip)
+    {
+        audioPlayer.PlayOneShot(clip);
+    }
+
 }
