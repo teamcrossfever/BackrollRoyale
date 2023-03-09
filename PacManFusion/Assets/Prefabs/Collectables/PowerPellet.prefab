@@ -125,4 +125,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPower: 1
-  points: 10
+  duration: 8
+  points: 50

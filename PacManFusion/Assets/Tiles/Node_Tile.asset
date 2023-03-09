@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Node_Tile
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: 21300000, guid: 73ec44e4741057941bfbfd484bd0ff60, type: 3}
-  m_DefaultGameObject: {fileID: 6593032369502181584, guid: 5b3ca7b8df32d5242ace18d6f15ada5f, type: 3}
+  m_DefaultGameObject: {fileID: 2858727279936768011, guid: adb09a1a65552704da1d576d81d465cf, type: 3}
   m_DefaultColliderType: 0
   m_TilingRules: []

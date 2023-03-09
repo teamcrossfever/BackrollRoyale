@@ -77,8 +77,22 @@ public class Pacman : MonoBehaviour
                 {
                     var pellet = col.GetComponent<Pellet>();
                     gm.PelletEaten(pellet);
+                }else if (col.CompareTag(Tags.Ghost))
+                {
+                    var ghost = col.GetComponent<Ghost>();
+
+                    if (ghost.frightened.enabled)
+                        gm.GhostEaten(ghost);
+                    else
+                        gm.PacmanEaten();
                 }
             }
         }
+    }
+
+    public void ResetState()
+    {
+        this.movement.ResetState();
+        this.gameObject.SetActive(true);
     }
 }

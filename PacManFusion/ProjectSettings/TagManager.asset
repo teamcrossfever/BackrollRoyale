@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pellet
+  - Ghost
+  - Player_Net
+  - Node
   layers:
   - Default
   - TransparentFX

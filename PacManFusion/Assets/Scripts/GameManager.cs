@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public Pacman pacman;
     public Pellet[] pellets;
 
+    public int ghostMultiplier { get; private set; } = 1;
     public int Score { get; private set; }
     public int Lives { get; private set; }
 
@@ -33,6 +34,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Initialize()
+    {
+        if(ghosts==null || ghosts.Length < 1)
+        {
+            ghosts = FindObjectsOfType<Ghost>();
+        }
+
+        if (!pacman)
+            pacman = FindObjectOfType<Pacman>();
+    }
+
     private void NewGame()
     {
         SetScore(0);
@@ -55,12 +67,14 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void ResetState()
     {
+        ResetGhostMultiplier();
+
         for (int i = 0; i < ghosts.Length; i++)
         {
-            ghosts[i].gameObject.SetActive(true);
+            ghosts[i].ResetState();
         }
 
-        pacman.gameObject.SetActive(true);
+        pacman.ResetState();
     }
 
     private void GameOver()
@@ -85,7 +99,12 @@ public class GameManager : MonoBehaviour
 
     public void GhostEaten(Ghost ghost)
     {
-        SetScore(this.Score + ghost.points);
+        if (!ghost)
+            return;
+
+        int points = ghost.points * this.ghostMultiplier;
+        SetScore(this.Score + points);
+        this.ghostMultiplier++;
     }
 
     public void PacmanEaten()
@@ -112,8 +131,33 @@ public class GameManager : MonoBehaviour
 
         if (pellet.isPower)
         {
-
+            CancelInvoke(nameof(ResetGhostMultiplier));
+            Invoke(nameof(ResetGhostMultiplier), pellet.duration);
         }
+
+        if (!HasRemainingPellets())
+        {
+            this.pacman.gameObject.SetActive(false); //Dont kill pacman
+            Invoke(nameof(NewRound), 3.0f);
+        }
+    }
+
+    bool HasRemainingPellets()
+    {
+        foreach (var pellet in this.pellets)
+        {
+            //There are pellets left
+            if (pellet.gameObject.activeSelf)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    void ResetGhostMultiplier()
+    {
+        ghostMultiplier = 1;
     }
 
     void PlayOneShot(AudioClip clip)

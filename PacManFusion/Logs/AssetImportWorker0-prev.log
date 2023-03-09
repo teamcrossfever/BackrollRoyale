@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16295 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 65447 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ C:/UnityProjects/BackrollRoyale/PacManFusion
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-12188
+10813
 Successfully changed project path to: C:/UnityProjects/BackrollRoyale/PacManFusion
 C:/UnityProjects/BackrollRoyale/PacManFusion
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/UnityProjects/BackrollRoyale/PacManFusion
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 137.71 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 138.98 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.8f1 (b30333d56e81)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -57,95 +57,95 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce RTX 3060 (ID=0x2503)
     Vendor:   NVIDIA
-    VRAM:     12142 MB
-    Driver:   31.0.15.1694
+    VRAM:     12129 MB
+    Driver:   31.0.15.2849
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56340
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010272 seconds.
+Registered in 0.011013 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 168.41 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 135.73 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.074 seconds
+- Completed reload, in  0.909 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1075ms)
-		BeginReloadAssembly (119ms)
+	ReloadAssembly (910ms)
+		BeginReloadAssembly (113ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (805ms)
-			LoadAssemblies (114ms)
+		EndReloadAssembly (644ms)
+			LoadAssemblies (109ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (201ms)
+			SetupTypeCache (148ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (456ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (394ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (169ms)
+				RefreshPlugins (136ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (222ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.018396 seconds.
+Registered in 0.023575 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\BackrollRoyale\PacManFusion\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\BackrollRoyale\PacManFusion\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 125.29 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 124.37 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.657 seconds
+- Completed reload, in  1.626 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1658ms)
-		BeginReloadAssembly (145ms)
+	ReloadAssembly (1627ms)
+		BeginReloadAssembly (135ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (1372ms)
-			LoadAssemblies (128ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1343ms)
+			LoadAssemblies (129ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (377ms)
+			SetupTypeCache (345ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (94ms)
-			SetupLoadedEditorAssemblies (709ms)
+			RebuildScriptCaches (82ms)
+			SetupLoadedEditorAssemblies (721ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (125ms)
-				BeforeProcessingInitializeOnLoad (134ms)
-				ProcessInitializeOnLoadAttributes (381ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (126ms)
+				ProcessInitializeOnLoadAttributes (396ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 2.06 ms, found 7 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.46 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4273 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 79 unused Assets / (226.9 KB). Loaded Objects now: 4790.
+Unloading 79 unused Assets / (227.0 KB). Loaded Objects now: 4790.
 Memory consumption went from 160.2 MB to 159.9 MB.
-Total: 4.804500 ms (FindLiveObjects: 0.595500 ms CreateObjectMapping: 0.134500 ms MarkObjects: 3.855700 ms  DeleteObjects: 0.217700 ms)
+Total: 4.195700 ms (FindLiveObjects: 0.435100 ms CreateObjectMapping: 0.179200 ms MarkObjects: 3.315200 ms  DeleteObjects: 0.264500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,16 +159,364 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 222567.676007 seconds.
-  path: Assets/Photon/Fusion/Scripts/Editor/FusionHub/Resources/FusionHubSkin/fusion-hub-skin-steel.png
-  artifactKey: Guid(0566916d8e2825c4b8ca741167d4ddda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/Fusion/Scripts/Editor/FusionHub/Resources/FusionHubSkin/fusion-hub-skin-steel.png using Guid(0566916d8e2825c4b8ca741167d4ddda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '059adcbce728391eff5b0896a94e4a0b') in 0.139013 seconds 
+  Time since last request: 601832.100915 seconds.
+  path: Assets/Prefabs/Collectables/PowerPellet.prefab
+  artifactKey: Guid(5b3ca7b8df32d5242ace18d6f15ada5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Collectables/PowerPellet.prefab using Guid(5b3ca7b8df32d5242ace18d6f15ada5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '701cfa89842308e2d83db4f2b7e55e0c') in 0.118108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Prefabs/Collectables/Pellet.prefab
+  artifactKey: Guid(1085bb8970334c14ebabcd47e74c9ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Collectables/Pellet.prefab using Guid(1085bb8970334c14ebabcd47e74c9ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942033be2b07b70e73b0f28894461c22') in 0.014255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.508354 seconds.
+  path: Assets/Rewired/Examples/GamepadTemplateUI/Images/action-button.png
+  artifactKey: Guid(fb21d43469c422e4799d052c515883f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Examples/GamepadTemplateUI/Images/action-button.png using Guid(fb21d43469c422e4799d052c515883f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f757a8d049f979746379d8e92122a13') in 0.146429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Pacman_02.png
+  artifactKey: Guid(1f9604f5749fde646a59a72c9ee1cd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pacman_02.png using Guid(1f9604f5749fde646a59a72c9ee1cd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d7dcab9167eb7c377554dd4b01cc84') in 0.023911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Rewired/Extras/ControlMapper/Images/graphic-center-stick.png
+  artifactKey: Guid(ec2db8ab6243b9545bbe7e137131b6c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/ControlMapper/Images/graphic-center-stick.png using Guid(ec2db8ab6243b9545bbe7e137131b6c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '296bcf6453dcb794a3d500ef5cedcc30') in 0.047740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Sprites/Pellet_Large.png
+  artifactKey: Guid(f5539a5cab8e4b0479adf95423fa7c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pellet_Large.png using Guid(f5539a5cab8e4b0479adf95423fa7c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3fba2aa644d53932cc20d1e46b67b2') in 0.061344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/Fruit_Melon.png
+  artifactKey: Guid(76efc71326ce0624b86ebac20e4ad950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fruit_Melon.png using Guid(76efc71326ce0624b86ebac20e4ad950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217849d00cb970abe9324c8ec7831fc3') in 0.037366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Pacman_Death_03.png
+  artifactKey: Guid(b595a8ceed8117d4cb85975acdec433e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pacman_Death_03.png using Guid(b595a8ceed8117d4cb85975acdec433e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ab705a5cdc96abadc6c018245018f6') in 0.046828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Sprites/Fruit_Bell.png
+  artifactKey: Guid(9db59b1f7c3f18a488bb7006c8f7d63a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fruit_Bell.png using Guid(9db59b1f7c3f18a488bb7006c8f7d63a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ef812d3f0c7fda87ef4c1ece513a72') in 0.035235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/Fruit_Strawberry.png
+  artifactKey: Guid(7f92fd0a6259c0748a3798477124414b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fruit_Strawberry.png using Guid(7f92fd0a6259c0748a3798477124414b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d3a81f8a61c08246c480d49085ceae') in 0.029898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Rewired/Examples/GamepadTemplateUI/Images/center-button.png
+  artifactKey: Guid(bc49b22c5555d61488efb201b5e28e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Examples/GamepadTemplateUI/Images/center-button.png using Guid(bc49b22c5555d61488efb201b5e28e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca5b9d8e3f06d5ff36a79a1f86828f5') in 0.035192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Rewired/Examples/GamepadTemplateUI/Images/controller-body-front.png
+  artifactKey: Guid(546bf6c397a8d574c96f32a6d68ed921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Examples/GamepadTemplateUI/Images/controller-body-front.png using Guid(546bf6c397a8d574c96f32a6d68ed921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64fc97ecf59f41d5b70d9edb4aea638b') in 0.055146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Rewired/Examples/GamepadTemplateUI/Images/stick-arrow.png
+  artifactKey: Guid(5e049a8f255844b43a4504301dea94ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Examples/GamepadTemplateUI/Images/stick-arrow.png using Guid(5e049a8f255844b43a4504301dea94ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f78b702646882b7626546191fae89388') in 0.045576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Ghost_Eyes_Left.png
+  artifactKey: Guid(d65aa956b7569874fab274083826a77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ghost_Eyes_Left.png using Guid(d65aa956b7569874fab274083826a77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8347ad16a6a6a6034bc6ff92d3a1b9e7') in 0.041684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Rewired/Extras/TouchControls/Sprites/Buttons/Button06_Red_Down.png
+  artifactKey: Guid(c4e4fed3f153c1f4c9db64aee2d6b155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/TouchControls/Sprites/Buttons/Button06_Red_Down.png using Guid(c4e4fed3f153c1f4c9db64aee2d6b155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a40c8d9175d7b45f8cedbaabd213939') in 0.049080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Rewired/Extras/TouchControls/Sprites/Joysticks/DirectionIndicators/Arrow01.png
+  artifactKey: Guid(ab50eddfd4deefb4c84f38f813189326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/TouchControls/Sprites/Joysticks/DirectionIndicators/Arrow01.png using Guid(ab50eddfd4deefb4c84f38f813189326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69cc2d9f60f6def6d2c4374215536248') in 0.037294 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000036 seconds.
-  path: Assets/Photon/Fusion/Scripts/Editor/FusionHub/Resources/FusionHubSkin/fusion-hub-skin-box.png
-  artifactKey: Guid(5c322c17376df3f448fb66679ef2af5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/Fusion/Scripts/Editor/FusionHub/Resources/FusionHubSkin/fusion-hub-skin-box.png using Guid(5c322c17376df3f448fb66679ef2af5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9439266ac5ca583028f68336bc8c28') in 0.024093 seconds 
+  path: Assets/Rewired/Extras/TouchControls/Sprites/Circles/CircleSolid01.png
+  artifactKey: Guid(b1af90ce03a007349aa9428d646a0939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/TouchControls/Sprites/Circles/CircleSolid01.png using Guid(b1af90ce03a007349aa9428d646a0939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2810aac5aa986acd93cccd8d2fb060e0') in 0.039392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Rewired/Extras/ControlMapper/Images/icon-invert.png
+  artifactKey: Guid(c084db22e43bd61499f3d42d7946ba31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/ControlMapper/Images/icon-invert.png using Guid(c084db22e43bd61499f3d42d7946ba31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '569b8b11510a92327434639f82590e62') in 0.033050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Photon/Fusion/Scripts/Prototyping/Materials/FusionPrototypeWhitePixel.png
+  artifactKey: Guid(5422498f780e1364b9989ffa3292a010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/Fusion/Scripts/Prototyping/Materials/FusionPrototypeWhitePixel.png using Guid(5422498f780e1364b9989ffa3292a010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b277910ca21eefbcf590031c423389') in 0.031587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Pacman_Death_06.png
+  artifactKey: Guid(2eb4a7f536f928148baff2eeba8af7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pacman_Death_06.png using Guid(2eb4a7f536f928148baff2eeba8af7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c60d13bff22cff7a971b55ac5d04abd') in 0.031546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprites/Pacman_Death_08.png
+  artifactKey: Guid(6767e4473f995a2408eec5b583ded67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pacman_Death_08.png using Guid(6767e4473f995a2408eec5b583ded67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9821ac94e23029b32cc8c8372544188a') in 0.031237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Rewired/Extras/TouchControls/Sprites/Joysticks/Sticks/ArcadeStick01_Red.png
+  artifactKey: Guid(20df1a443bb7dd445abf482e23f98d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/TouchControls/Sprites/Joysticks/Sticks/ArcadeStick01_Red.png using Guid(20df1a443bb7dd445abf482e23f98d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e4e85fd6a49663313c7c8770557eff') in 0.038252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Rewired/Extras/ControlMapper/Images/calibration-value-marker.png
+  artifactKey: Guid(7f4e5f9eac93c0a4ab5e638adf6b02e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/ControlMapper/Images/calibration-value-marker.png using Guid(7f4e5f9eac93c0a4ab5e638adf6b02e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b8774db3b7a5ae9b9d94f58b3ea98c') in 0.033221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Rewired/Examples/Shared/Sprites/pointer.png
+  artifactKey: Guid(8f074558a0d80874984ff71650594d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Examples/Shared/Sprites/pointer.png using Guid(8f074558a0d80874984ff71650594d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f3ce38543ff2058c48776e8e0a389d0') in 0.037239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Sprites/Pacman_Death_10.png
+  artifactKey: Guid(273b5a5d3e562d3419ecad3222b29217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pacman_Death_10.png using Guid(273b5a5d3e562d3419ecad3222b29217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e5d6af9bd028bddfa08dbd60add5ec') in 0.051269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Rewired/Extras/TouchControls/Sprites/Joysticks/DirectionIndicators/Arrow08.png
+  artifactKey: Guid(8e0cb7e7dc5f5a54ab9e388c6b9b5999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/TouchControls/Sprites/Joysticks/DirectionIndicators/Arrow08.png using Guid(8e0cb7e7dc5f5a54ab9e388c6b9b5999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d73475fdc4cd688932fdc4632ee93ca') in 0.033905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Pacman_Death_05.png
+  artifactKey: Guid(7ae4f038555669349b19305499ef3267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pacman_Death_05.png using Guid(7ae4f038555669349b19305499ef3267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dac474a305cef8a7c83533cb7f83ab9') in 0.029311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Ghost_Body_02.png
+  artifactKey: Guid(6f51e42bf59063c4ab7a5608a42bd23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ghost_Body_02.png using Guid(6f51e42bf59063c4ab7a5608a42bd23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '667138b2b2e42312c69795c27e2ecd79') in 0.028445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Sprites/Pacman_Death_07.png
+  artifactKey: Guid(2218b2226c23db74c8e39a743542e2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pacman_Death_07.png using Guid(2218b2226c23db74c8e39a743542e2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c4a1837e875ac7896cd504e9912650') in 0.027779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Wall_11.png
+  artifactKey: Guid(3fa89c6e256d54f40865316cb10472cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_11.png using Guid(3fa89c6e256d54f40865316cb10472cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f08c3c98b241767d1b7d52fc9c1828ff') in 0.023775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/Wall_09.png
+  artifactKey: Guid(ea70de09204aca148be4cc456714f7ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_09.png using Guid(ea70de09204aca148be4cc456714f7ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319967e6e73945d91290fb62d6002a34') in 0.028584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Wall_03.png
+  artifactKey: Guid(1b5f53d85c6ef3e479b07ca754ac0317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_03.png using Guid(1b5f53d85c6ef3e479b07ca754ac0317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010fc7058d12156fd6d0f557e76d2c85') in 0.020947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Rewired/Extras/TouchControls/Sprites/Buttons/Button03_Red_Down.png
+  artifactKey: Guid(cbd6dd70d79e29a44a54beee708af991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/TouchControls/Sprites/Buttons/Button03_Red_Down.png using Guid(cbd6dd70d79e29a44a54beee708af991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25417924eed35bbc533776df7d31f66') in 0.041559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Rewired/Extras/TouchControls/Sprites/Backgrounds/Rounded01.png
+  artifactKey: Guid(acd8278e920cf5e46bbef8a57bd04ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/TouchControls/Sprites/Backgrounds/Rounded01.png using Guid(acd8278e920cf5e46bbef8a57bd04ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81c11cbd6d7e4dc24268237bd39acd3') in 0.032289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Wall_07.png
+  artifactKey: Guid(22b85c5a1b35f6344bea572b841882b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_07.png using Guid(22b85c5a1b35f6344bea572b841882b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdb99cc959efcdaa1c7296ec30e38679') in 0.022637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Wall_12.png
+  artifactKey: Guid(8d65a6fd64925c141847db8ffa1b186f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_12.png using Guid(8d65a6fd64925c141847db8ffa1b186f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '968caf6f8314be9f8cf159007a32326a') in 0.023254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Rewired/Examples/GamepadTemplateUI/Images/shoulder-button-front.png
+  artifactKey: Guid(ad926f266f5327d48b890791e37dfcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Examples/GamepadTemplateUI/Images/shoulder-button-front.png using Guid(ad926f266f5327d48b890791e37dfcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6663a9508264bd8088bed0fa11f91383') in 0.026104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Rewired/Examples/PlayerMouseSprite/Sprites/target.png
+  artifactKey: Guid(d3f9f79929c708d45b0cc96aa9af8fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Examples/PlayerMouseSprite/Sprites/target.png using Guid(d3f9f79929c708d45b0cc96aa9af8fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c080c17a1c071d58b0a68b20fe8ac56') in 0.030608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Wall_20.png
+  artifactKey: Guid(d0460c4bafe8a95469fb0431894e6cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_20.png using Guid(d0460c4bafe8a95469fb0431894e6cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6d2f4590477ca98f90c12d588821d9') in 0.028977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Rewired/Examples/CustomControllersTouch/Images/Joystickcircle.png
+  artifactKey: Guid(0e015ecd147972c41b1faf4690c53167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Examples/CustomControllersTouch/Images/Joystickcircle.png using Guid(0e015ecd147972c41b1faf4690c53167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d0644b9e0535239c1b9c41853d8859') in 0.032527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/Wall_37.png
+  artifactKey: Guid(b1372eb48ab258e4d9cc78b4b8ae51e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_37.png using Guid(b1372eb48ab258e4d9cc78b4b8ae51e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e69fac9a2f51667c359055239f5e970') in 0.021458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Wall_30.png
+  artifactKey: Guid(6f115c8eee0d491419895b53625f41dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_30.png using Guid(6f115c8eee0d491419895b53625f41dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17398e1c3ef5e016445a9263bc235643') in 0.022541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Wall_27.png
+  artifactKey: Guid(39e3fa3fcbaf196489ad0e7e74bce721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_27.png using Guid(39e3fa3fcbaf196489ad0e7e74bce721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b2ef1c46c4cabc476f75fec3f3ed54') in 0.022671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Wall_34.png
+  artifactKey: Guid(336cb5f821d09e94ca211f1a42e47428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_34.png using Guid(336cb5f821d09e94ca211f1a42e47428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c73b66e53951a2d881bea674134fd6') in 0.021071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Sprites/Wall_29.png
+  artifactKey: Guid(1281c669df473ee4099877bc91b5a04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_29.png using Guid(1281c669df473ee4099877bc91b5a04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb45a2825b6f8fe49bcd3b7170139bce') in 0.019378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Wall_36.png
+  artifactKey: Guid(b205f5c04b61b034fb3275def4c4af50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_36.png using Guid(b205f5c04b61b034fb3275def4c4af50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85dbbbd2cd834a6ab9b8c2568ee58091') in 0.018933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Wall_00.png
+  artifactKey: Guid(e52ee8a5840dcaf4499f536c1580873c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_00.png using Guid(e52ee8a5840dcaf4499f536c1580873c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc273612e6ff75538d9261a8fbb5f91') in 0.018225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Rewired/Examples/GamepadTemplateUI/Images/stick-base.png
+  artifactKey: Guid(9e5bc0ff73219dd4dbf19d928c0b867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Examples/GamepadTemplateUI/Images/stick-base.png using Guid(9e5bc0ff73219dd4dbf19d928c0b867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde40bf51653b30139820a64224b53d1') in 0.029151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Sprites/Wall_22.png
+  artifactKey: Guid(5d893e4abcbcea6468a26182ad2b8837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_22.png using Guid(5d893e4abcbcea6468a26182ad2b8837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fcc0e78984585ddd40ba36116097eda') in 0.021205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/Wall_08.png
+  artifactKey: Guid(8d3e7acfbe56ae24d8bf1c6d9b99af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_08.png using Guid(8d3e7acfbe56ae24d8bf1c6d9b99af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd42898916da98f50c5aba07d5845d4a4') in 0.022288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprites/Wall_16.png
+  artifactKey: Guid(369fed99b29f81d4d926569de4472465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_16.png using Guid(369fed99b29f81d4d926569de4472465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01b3ace728bbb6e0f8d994f1f9e382e') in 0.025982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Wall_17.png
+  artifactKey: Guid(3f52fd47e1d19304b831203ccebde5bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_17.png using Guid(3f52fd47e1d19304b831203ccebde5bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8176931883dbabf919d053f20a1bb82') in 0.027291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Pacman_Death_02.png
+  artifactKey: Guid(c2677ca0e0dc70f42a7f29031ae0a7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pacman_Death_02.png using Guid(c2677ca0e0dc70f42a7f29031ae0a7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3272bfe2f10de8064a0210fddb4237e4') in 0.027151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Rewired/Extras/ControlMapper/Images/icon-joystick.png
+  artifactKey: Guid(0c9ce4e64fb83764aa394faeeed56210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/ControlMapper/Images/icon-joystick.png using Guid(0c9ce4e64fb83764aa394faeeed56210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1ca9279782139ae6a932c2ae6cb6a2') in 0.029417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Ghost_Eyes_Down.png
+  artifactKey: Guid(b97167c35748db84fb4d32f4f242922a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ghost_Eyes_Down.png using Guid(b97167c35748db84fb4d32f4f242922a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b040dfda1d6754e44706f70548bf10') in 0.028961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Sprites/Wall_19.png
+  artifactKey: Guid(ca95097f2fe56674ba66a459ac8d79ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_19.png using Guid(ca95097f2fe56674ba66a459ac8d79ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef652b1c5ad176100eb81d0e8aa8748') in 0.026294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Rewired/Extras/TouchControls/Sprites/Buttons/Button01_Red_Down.png
+  artifactKey: Guid(f8910b6d8888e5d4a99d1ab4a75b5e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rewired/Extras/TouchControls/Sprites/Buttons/Button01_Red_Down.png using Guid(f8910b6d8888e5d4a99d1ab4a75b5e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b51a2ced8754002c8cdb73454ee2175f') in 0.038515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Pacman_Death_11.png
+  artifactKey: Guid(c66651b84f0bd454e909b29b38595d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pacman_Death_11.png using Guid(c66651b84f0bd454e909b29b38595d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd2cb28eb57bec0b18691b0539524853') in 0.025985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Pellet_Medium.png
+  artifactKey: Guid(f3ad6a179f966804cad0514a2acbf0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pellet_Medium.png using Guid(f3ad6a179f966804cad0514a2acbf0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f07244ec6edba3327e747742167a021a') in 0.027710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Wall_26.png
+  artifactKey: Guid(4a3f1f82d57cce44b938b9061baccc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Wall_26.png using Guid(4a3f1f82d57cce44b938b9061baccc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d71a6c09593cef1b1a7dfd3bb05367') in 0.020097 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
