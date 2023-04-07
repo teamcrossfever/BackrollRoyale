@@ -22,6 +22,8 @@ public class Ghost : MonoBehaviour
         scatter = GetComponent<GhostScatter>();
         chase = GetComponent<GhostChase>();
         frightened = GetComponent<GhostFrightened>();
+
+        target = FindObjectOfType<Pacman>().transform;
     }
 
     private void Start()

@@ -451,6 +451,8 @@ MonoBehaviour:
   layerInteraction:
     serializedVersion: 2
     m_Bits: 128
+  inside: {fileID: 0}
+  outside: {fileID: 0}
 --- !u!114 &2179297066468881626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,6 +469,10 @@ MonoBehaviour:
   layerInteraction:
     serializedVersion: 2
     m_Bits: 128
+  body: {fileID: 8891276741386353126}
+  eyes: {fileID: 80634776020198403}
+  blue: {fileID: 8483599542156292325}
+  white: {fileID: 875092629712627078}
 --- !u!1 &8980520420843169385
 GameObject:
   m_ObjectHideFlags: 0

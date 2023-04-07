@@ -10,13 +10,16 @@ public class GhostScatter : GhostBehavior
         HandleCollisions();
     }
 
+    private void OnDisable()
+    {
+        ghost.chase.Enable();
+    }
+
     void HandleCollisions()
     {
-        Debug.Log("Scatter");
         var hits = Physics2D.OverlapCircleNonAlloc(transform.position, 0.5f, cols, layerInteraction);
         if (hits > 0)
         {
-            Debug.Log($"COLLISION SCATTER HIT: {hits}");
             for(int i=0; i<cols.Length; i++)
             {
                 if (!cols[i])

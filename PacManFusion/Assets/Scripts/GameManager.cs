@@ -47,8 +47,9 @@ public class GameManager : MonoBehaviour
 
     private void NewGame()
     {
+        Initialize();
         SetScore(0);
-        SetLives(3);
+        SetLives(999);
         NewRound();
     }
 
@@ -105,6 +106,8 @@ public class GameManager : MonoBehaviour
         int points = ghost.points * this.ghostMultiplier;
         SetScore(this.Score + points);
         this.ghostMultiplier++;
+
+        ghost.frightened.Eaten();
     }
 
     public void PacmanEaten()
@@ -131,6 +134,11 @@ public class GameManager : MonoBehaviour
 
         if (pellet.isPower)
         {
+            for(int i=0; i<this.ghosts.Length; i++)
+            {
+                var ghost = ghosts[i];
+                ghost.frightened.Enable(pellet.duration);
+            }
             CancelInvoke(nameof(ResetGhostMultiplier));
             Invoke(nameof(ResetGhostMultiplier), pellet.duration);
         }

@@ -66,7 +66,6 @@ public class Pacman : MonoBehaviour
         int hitCount = Physics2D.OverlapCircleNonAlloc(_transform.position, 0.5f, collisions,collectablesMask);
         if (hitCount > 0)
         {
-            Debug.Log("COLLISIONS");
             for(int i=0; i<collisions.Length; i++)
             {
                 var col = collisions[i];
@@ -77,7 +76,9 @@ public class Pacman : MonoBehaviour
                 {
                     var pellet = col.GetComponent<Pellet>();
                     gm.PelletEaten(pellet);
-                }else if (col.CompareTag(Tags.Ghost))
+                }
+                
+                if (col.CompareTag(Tags.Ghost))
                 {
                     var ghost = col.GetComponent<Ghost>();
 

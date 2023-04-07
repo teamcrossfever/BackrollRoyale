@@ -7,10 +7,12 @@ public abstract class GhostBehavior : MonoBehaviour
     public Ghost ghost { get; private set; }
     public float duration;
     public LayerMask layerInteraction;
+    private Collider2D col;
 
     private void Awake()
     {
         this.ghost = GetComponent<Ghost>();
+        col = GetComponent<Collider2D>();
         this.enabled = false;
     }
 
@@ -30,5 +32,10 @@ public abstract class GhostBehavior : MonoBehaviour
     {
         this.enabled = false;
         CancelInvoke();
+    }
+
+    protected void ToggleCollision(bool b)
+    {
+        col.enabled = b;
     }
 }
