@@ -1,0 +1,12 @@
+# Blender 3.4.1 MTL File: 'render_template.blend'
+# www.blender.org
+
+newmtl Wirefarme_shader
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.422802 0.374584 0.201303
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1

@@ -6,7 +6,10 @@ using Rewired;
 public class Pacman : MonoBehaviour
 {
     Transform _transform;
+    public int playerNum;
     public float inputThreshold = 0.5f;
+    [SerializeField]
+    Transform spinner;
 
     //layers
     [SerializeField]
@@ -14,11 +17,14 @@ public class Pacman : MonoBehaviour
 
     Player cInput;
     Vector2 inputDirection;
-    Movement movement;
+    Movement3D movement;
 
-    Collider2D[] collisions = new Collider2D[4];
+    Collider[] collisions = new Collider[4];
 
     GameManager gm;
+
+    //Reverse hit
+    float reverseTime = 1;
 
     private void Start()
     {
@@ -26,34 +32,73 @@ public class Pacman : MonoBehaviour
 
         _transform = transform;
 
-        cInput = Rewired.ReInput.players.GetPlayer(0);
-        movement = GetComponent<Movement>();
+        cInput = Rewired.ReInput.players.GetPlayer(playerNum);
+        movement = GetComponent<Movement3D>();
     }
     private void Update()
     {
         inputDirection = cInput.GetAxis2DRaw("Horizontal", "Vertical");
-        //Debug.Log($"MAG: {inputDirection.magnitude}");
-        if (inputDirection.magnitude > inputThreshold)
+
+        if (reverseTime >=1)
         {
-            if (inputDirection.y > 0)
+            //Debug.Log($"MAG: {inputDirection.magnitude}");
+            if (inputDirection.magnitude > inputThreshold)
             {
-                movement.SetDirection(Vector2.up);
-            }else if (inputDirection.y < 0)
-            {
-                movement.SetDirection(Vector2.down);
-            }
-            else if (inputDirection.x > 0)
-            {
-                movement.SetDirection(Vector2.right);
-            }
-            else if (inputDirection.x < 0)
-            {
-                movement.SetDirection(Vector2.left);
+                if (inputDirection.y > 0)
+                {
+                    movement.SetDirection(Vector3.forward);
+                }
+                else if (inputDirection.y < 0)
+                {
+                    movement.SetDirection(Vector3.back);
+                }
+                else if (inputDirection.x > 0)
+                {
+                    movement.SetDirection(Vector3.right);
+                }
+                else if (inputDirection.x < 0)
+                {
+                    movement.SetDirection(Vector3.left);
+                }
             }
         }
+        else
+        {
+            //When reverse time is negative count to 1 to stop it
+            reverseTime += Time.deltaTime;
+            spinner.rotation = Quaternion.LookRotation(-movement.Direction, Vector3.up);
 
+            if (movement.IsColliding(movement.Direction))
+            {
+                Vector3 dir = Quaternion.Euler(0, -90, 0) * movement.Direction;
+
+                if (!movement.IsColliding(dir))
+                {
+                    movement.SetDirection(dir);
+                }
+                else
+                {
+                    dir = Quaternion.Euler(0, 90, 0) * movement.Direction;
+                    movement.SetDirection(dir);
+                }
+                
+            }
+
+            if (reverseTime >= -0.5f)
+            {
+                reverseTime = 1;
+                movement.SetDirection(-movement.Direction);
+            }
+
+            return;
+        }
+
+        /*
         float angle = Mathf.Atan2(movement.Direction.y, movement.Direction.x);
         _transform.rotation = Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward);
+        */
+
+        spinner.rotation = Quaternion.LookRotation(movement.Direction, Vector3.up);
     }
 
     private void FixedUpdate()
@@ -63,7 +108,8 @@ public class Pacman : MonoBehaviour
 
     private void HandleCollisions()
     {
-        int hitCount = Physics2D.OverlapCircleNonAlloc(_transform.position, 0.5f, collisions,collectablesMask);
+        collisions = new Collider[4];
+        int hitCount = Physics.OverlapSphereNonAlloc(_transform.position, 0.5f, collisions,collectablesMask);
         if (hitCount > 0)
         {
             for(int i=0; i<collisions.Length; i++)
@@ -71,6 +117,22 @@ public class Pacman : MonoBehaviour
                 var col = collisions[i];
                 if (!col)
                     continue;
+
+                if (col.CompareTag(Tags.Player))
+                {
+                    var otherPlayer = col.GetComponent<Pacman>();
+
+                    if (otherPlayer == this)
+                        continue;
+
+                    if (reverseTime >= 1)
+                    {
+                        KnockedBack();
+                        otherPlayer.KnockedBack();
+                        continue;
+                    }
+                    
+                }
 
                 if (col.CompareTag(Tags.Pellet))
                 {
@@ -89,6 +151,16 @@ public class Pacman : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void KnockedBack()
+    {
+        if (reverseTime < 1)
+            return;
+
+        reverseTime = -1;
+        movement.SetDirection(-movement.Direction);
+
     }
 
     public void ResetState()
