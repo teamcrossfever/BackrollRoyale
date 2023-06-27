@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fusion;
 
-public class Movement3D : MonoBehaviour
+public class Movement3D : NetworkTransform
 {
     Transform _transform;
+
+    bool hasInitialized = false;
+
     public float speed = 8f;
     public float speedMultiplier = 1;
+
     float detectRadius = 0.5f;
     [SerializeField]
     float detectWidth = 0.5f;
+
     Collider col;
     bool isColliding = false;
 
@@ -18,18 +24,42 @@ public class Movement3D : MonoBehaviour
     public Vector2 initialDirection;
     public LayerMask obstacleLayer;
 
+    [Networked]
     public Vector3 Direction { get; private set; }
+    [Networked]
     public Vector3 NextDirection { get; private set; }
+    [Networked]
     public Vector3 StartPosition { get; private set; }
+
+    protected override void Awake()
+    {
+        base.Awake();
+        //CacheController();
+    }
+
+    public override void Spawned()
+    {
+        base.Spawned();
+        Initialize();
+
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        Initialize();
+    }
+
+    private void Initialize()
+    {
+        if (hasInitialized)
+            return;
+
         _transform = transform;
         StartPosition = _transform.position;
         Direction = initialDirection;
         col = GetComponent<Collider>();
-
+        hasInitialized = true;
     }
 
     private void Update()
@@ -39,10 +69,10 @@ public class Movement3D : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        HandleMovement();
+        //HandleMovement();
     }
 
-    void HandleMovement()
+    public void HandleMovement()
     {
         if (!isColliding)
         {

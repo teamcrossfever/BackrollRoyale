@@ -7,7 +7,9 @@ using System.Collections.Generic;
 using System;
 using UnityEngine.SceneManagement;
 
-public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
+using Rewired;
+
+public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
 {
     NetworkRunner _runner;
 
@@ -18,9 +20,11 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     bool _mouseButton0;
     bool _mouseButton1;
 
+    Player cInput;
 
     void Start()
     {
+        cInput = Rewired.ReInput.players.GetPlayer(1);
         Screen.SetResolution(640, 480, false);
     }
     private void OnGUI()
@@ -116,24 +120,8 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     {
         var data = new NetworkInputData();
 
-        if (Input.GetKey(KeyCode.W))
-        {
-            data.direction += Vector3.forward;
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            data.direction += Vector3.back;
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            data.direction += Vector3.left;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            data.direction += Vector3.right;
-        }
+        data.direction = new Vector3(cInput.GetAxisRaw("Horizontal"), cInput.GetAxisRaw("Vertical"), 0);
+        data.direction = Vector3.ClampMagnitude(data.direction, 1);
 
         if (_mouseButton0)
         {

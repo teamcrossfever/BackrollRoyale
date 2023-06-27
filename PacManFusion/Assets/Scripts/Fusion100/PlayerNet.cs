@@ -24,6 +24,7 @@ public class PlayerNet : NetworkBehaviour
 
     //Mat
     private Material _material;
+
     public Material Material {
         get
         {
@@ -81,8 +82,6 @@ public class PlayerNet : NetworkBehaviour
                     spawned = !spawned;
                 }
             }
-
-            
         }
     }
 

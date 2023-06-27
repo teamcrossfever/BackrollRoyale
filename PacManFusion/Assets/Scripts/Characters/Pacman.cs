@@ -16,7 +16,7 @@ public class Pacman : MonoBehaviour
     LayerMask collectablesMask;
 
     Player cInput;
-    Vector2 inputDirection;
+    Vector3 inputDirection;
     Movement3D movement;
 
     Collider[] collisions = new Collider[4];
@@ -37,9 +37,19 @@ public class Pacman : MonoBehaviour
     }
     private void Update()
     {
-        inputDirection = cInput.GetAxis2DRaw("Horizontal", "Vertical");
 
-        if (reverseTime >=1)
+    }
+
+    private void FixedUpdate()
+    {
+        HandleCollisions();
+    }
+
+    public void UpdateMovement(Vector3 direction)
+    {
+        inputDirection = direction;
+
+        if (reverseTime >= 1)
         {
             //Debug.Log($"MAG: {inputDirection.magnitude}");
             if (inputDirection.magnitude > inputThreshold)
@@ -81,7 +91,7 @@ public class Pacman : MonoBehaviour
                     dir = Quaternion.Euler(0, 90, 0) * movement.Direction;
                     movement.SetDirection(dir);
                 }
-                
+
             }
 
             if (reverseTime >= -0.5f)
@@ -99,11 +109,6 @@ public class Pacman : MonoBehaviour
         */
 
         spinner.rotation = Quaternion.LookRotation(movement.Direction, Vector3.up);
-    }
-
-    private void FixedUpdate()
-    {
-        HandleCollisions();
     }
 
     private void HandleCollisions()
