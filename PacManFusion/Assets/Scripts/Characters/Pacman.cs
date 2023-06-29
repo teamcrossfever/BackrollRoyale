@@ -21,14 +21,14 @@ public class Pacman : MonoBehaviour
 
     Collider[] collisions = new Collider[4];
 
-    GameManager gm;
+    MatchManager gm;
 
     //Reverse hit
     float reverseTime = 1;
 
     private void Start()
     {
-        gm = FindObjectOfType<GameManager>();
+        gm = FindObjectOfType<MatchManager>();
 
         _transform = transform;
 

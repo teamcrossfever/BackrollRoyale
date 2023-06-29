@@ -3,7 +3,7 @@ using UnityEngine;
 
 public static class ServerInfo
 {
-    public const int UserCapacity = 30;
+    public const int UserCapacity = 64;
 
     public static string LobbyName;
     public static string StageName = "Battle";
@@ -22,7 +22,7 @@ public static class ServerInfo
 
     public static int MaxUsers
     {
-        get => PlayerPrefs.GetInt("S_MaxUsers", 30);
+        get => PlayerPrefs.GetInt("S_MaxUsers", 64);
         set => PlayerPrefs.SetInt("S_MaxUsers", Mathf.Clamp(value, 1, UserCapacity));
     }
 }

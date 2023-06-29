@@ -6,13 +6,7 @@ using Fusion;
 using Fusion.Sockets;
 using System;
 using UnityEngine.SceneManagement;
-public enum ConnectionStatus
-{
-    Disconnected,
-    Connecting,
-    Failed,
-    Connected
-}
+
 public class NetworkMenu : MonoBehaviour, INetworkRunnerCallbacks
 {
     public static ConnectionStatus ConnectionStatus = ConnectionStatus.Disconnected;
