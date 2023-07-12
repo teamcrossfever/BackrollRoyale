@@ -15,11 +15,6 @@ public class PlayerNetwork : NetworkBehaviour
 
     public override void FixedUpdateNetwork()
     {
-        if(GetInput(out NetworkInputData data))
-        {
-            data.direction.Normalize();
 
-            player.UpdateMovement(data.direction);
-        }
     }
 }

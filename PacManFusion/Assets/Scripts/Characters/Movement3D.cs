@@ -64,16 +64,13 @@ public class Movement3D : NetworkTransform
 
     private void Update()
     {
-
-        isColliding = IsColliding(Direction);
-    }
-    private void FixedUpdate()
-    {
-        //HandleMovement();
+        
     }
 
     public void HandleMovement()
     {
+        isColliding = IsColliding(Direction);
+
         if (!isColliding)
         {
             Vector3 pos = _transform.position;

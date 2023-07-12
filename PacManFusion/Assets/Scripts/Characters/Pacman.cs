@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Rewired;
 
-public class Pacman : MonoBehaviour
+public class Pacman : PacComponent
 {
     Transform _transform;
     public int playerNum;
@@ -35,14 +35,28 @@ public class Pacman : MonoBehaviour
         cInput = Rewired.ReInput.players.GetPlayer(playerNum);
         movement = GetComponent<Movement3D>();
     }
-    private void Update()
-    {
-
-    }
 
     private void FixedUpdate()
     {
+        
+    }
+
+    public override void FixedUpdateNetwork()
+    {
+        if (GetInput(out NetworkInputData data))
+        {
+            data.direction.Normalize();
+
+            UpdateMovement(data.direction);
+
+            if((data.buttons & NetworkInputData.MOUSEBUTTON1) != 0)
+            {
+                Debug.Log("MOUSE PRESS FIRED!");
+            }
+        }
+
         HandleCollisions();
+        Pac.movement.HandleMovement();
     }
 
     public void UpdateMovement(Vector3 direction)

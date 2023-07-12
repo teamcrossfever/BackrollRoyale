@@ -27,18 +27,18 @@ public class LevelManager : NetworkSceneManagerBase
     {
 
     }
-
+    /*
     protected override IEnumerator SwitchScene(SceneRef prevScene, SceneRef newScene, FinishedLoadingDelegate finished)
     {
         Debug.Log("NETWORK SWITCH");
         Debug.Log($"Switching Scene From {prevScene} to {newScene}");
 
-        /*
+        
         if (newScene <= 0)
         {
             finished(new List<NetworkObject>());
             yield break;
-        }*/
+        }
 
         yield return new WaitForSeconds(1);
 
@@ -53,7 +53,7 @@ public class LevelManager : NetworkSceneManagerBase
         }
 
         _loadedScene = default;
-        Debug.Log($"Loading Scene {newScene}");
+        Debug.Log($"Loading Scene {newScene}: {Destination}");
 
         List<NetworkObject> sceneObjects = new List<NetworkObject>();
         if (newScene != prevScene)
@@ -69,10 +69,50 @@ public class LevelManager : NetworkSceneManagerBase
 
         if(GameManager.CurrentStage != null && newScene!= prevScene)
         {
-
+            Debug.Log($"STAGE GO: {GameManager.CurrentStage.stageName}");
+            if(Runner.GameMode == GameMode.Host)
+            {
+                foreach(var player in RoomPlayer.Players){
+                    GameManager.CurrentStage.SpawnPlayer(Runner, player);
+                }
+            }
         }
 
         yield return new WaitForSeconds(1);
+    }
+    */
+
+    protected override IEnumerator SwitchScene(SceneRef prevScene, SceneRef newScene, FinishedLoadingDelegate finished)
+    {
+        Debug.Log($"Loading scene {newScene}");
+
+        List<NetworkObject> sceneObjects = new List<NetworkObject>();
+
+        if (newScene >= 0)
+        {
+            yield return SceneManager.LoadSceneAsync(newScene, LoadSceneMode.Single);
+            Scene loadedScene = SceneManager.GetSceneByBuildIndex(newScene);
+            Debug.Log($"Loaded scene {newScene}: {loadedScene}");
+            sceneObjects = FindNetworkObjects(loadedScene, disable: false);
+        }
+
+        finished(sceneObjects);
+
+        // Delay one frame, so we're sure level objects has spawned locally
+        yield return null;
+
+        // Now we can safely spawn karts
+        if (GameManager.CurrentStage != null && newScene > 0)
+        {
+            if (Runner.GameMode == GameMode.Host)
+            {
+                foreach (var player in RoomPlayer.Players)
+                {
+                    //player.GameState = RoomPlayer.EGameState.GameCutscene;
+                    GameManager.CurrentStage.SpawnPlayer(Runner, player);
+                }
+            }
+        }
     }
 
     /*

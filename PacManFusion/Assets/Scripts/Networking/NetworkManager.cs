@@ -50,7 +50,7 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
 
         DontDestroyOnLoad(gameObject);
 
-        cInput = Rewired.ReInput.players.GetPlayer(1);
+        cInput = Rewired.ReInput.players.GetPlayer(0);
         //Screen.SetResolution(640, 480, false);
     }
     private void OnGUI()
@@ -59,6 +59,8 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
         {
             GUI.Label(new Rect(10, 10, 100, 200), "Player Count: " + _runner.ActivePlayers.Count());
         }
+
+        //Debug.Log($"HORIZON AXIS: {cInput.GetAxisRaw("Horizontal")}");
     }
 
     public async void StartGame(GameMode mode)
@@ -81,7 +83,7 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
             Scene = SceneManager.GetActiveScene().buildIndex,
             SceneManager = _levelManager,
             PlayerCount = ServerInfo.MaxUsers,
-             
+      
         });
     }
     public void JoinOrCreateLobby()
@@ -129,14 +131,21 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
         _mouseButton1 = _mouseButton1 | Input.GetMouseButton(1);
     }
 
+    public void GotoScene(string sceneName)
+    {
+        SetScene(sceneName);
+    }
+
     public void SetScene(string sceneName)
     {
 #if UNITY_EDITOR
         Debug.Log($"Set Network Scene Name: {sceneName}");
 #endif
 
-        _levelManager.Destination = sceneName;
-        _levelManager.Runner.SetActiveScene(0);
+       // _levelManager.Destination = sceneName;
+        Debug.Log($"NETWORK STAGE NAME: {sceneName}");
+       _runner.SetActiveScene(1);
+
 
     }
     public void OnConnectedToServer(NetworkRunner runner)
@@ -185,8 +194,21 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
     {
         var data = new NetworkInputData();
 
+        //Debug.Log($"HORIZON AXIS ONLINE: {cInput.GetAxisRaw("Vertical")}");
+
         data.direction = new Vector3(cInput.GetAxisRaw("Horizontal"), cInput.GetAxisRaw("Vertical"), 0);
         data.direction = Vector3.ClampMagnitude(data.direction, 1);
+
+        /*
+        if (Input.GetKey(KeyCode.D))
+        {
+            data.direction = Vector3.right;
+        }else if (Input.GetAxisRaw("Horizontal")<0)
+        {
+            data.direction = -Vector3.right;
+        }
+        */
+        
 
         if (_mouseButton0)
         {
@@ -215,11 +237,12 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
         if (runner.IsServer)
         {
             var roomPlayer = runner.Spawn(_roomPlayerPrefab, Vector3.zero, Quaternion.identity, player);
+            StartCoroutine(WaitForOtherPlayers());
         }
 
         SetConnectionStatus(ConnectionStatus.Connected);
 
-        if(onPlayerJoined!= null)
+        if (onPlayerJoined != null)
         {
             onPlayerJoined.Invoke();
             /*
@@ -232,8 +255,21 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
         }
         else
         {
-            Debug.LogWarning($"No Event for {nameof(onPlayerJoined)}");
+            Debug.LogWarning($"No Event Added for {nameof(onPlayerJoined)}");
         }
+        
+    }
+
+    IEnumerator WaitForOtherPlayers()
+    {
+            while (RoomPlayer.Players.Count < 2)
+            {
+                Debug.Log("Waiting for other players");
+                yield return null;
+            }
+
+        _runner.SetActiveScene(1);
+        yield return null;
     }
 
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)
