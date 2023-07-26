@@ -8,6 +8,7 @@ TagManager:
   - Ghost
   - Player_Net
   - Node
+  - Passage
   layers:
   - Default
   - TransparentFX

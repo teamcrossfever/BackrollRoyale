@@ -21,28 +21,30 @@ public class Movement3D : NetworkTransform
 
     Vector3 CenterPos { get => _transform.position + Vector3.up * 0.5f; }
 
-    public Vector2 initialDirection;
+    public Vector3 initialDirection;
     public LayerMask obstacleLayer;
 
-    [Networked]
+    //[Networked]
     public Vector3 Direction { get; private set; }
-    [Networked]
+    //[Networked]
     public Vector3 NextDirection { get; private set; }
-    [Networked]
+    //[Networked]
     public Vector3 StartPosition { get; private set; }
 
+    /*
     protected override void Awake()
     {
-        base.Awake();
+        //base.Awake();
         //CacheController();
     }
 
     public override void Spawned()
     {
-        base.Spawned();
-        Initialize();
+        //base.Spawned();
+        
 
     }
+    */
 
     // Start is called before the first frame update
     void Start()
@@ -67,14 +69,19 @@ public class Movement3D : NetworkTransform
         
     }
 
-    public void HandleMovement()
+    public void HandleCollision()
     {
         isColliding = IsColliding(Direction);
+    }
+
+    public void HandleMovement(float delta,float powerBoost)
+    {
+        
 
         if (!isColliding)
         {
             Vector3 pos = _transform.position;
-            Vector3 translation = Direction * speed * speedMultiplier * Time.fixedDeltaTime;
+            Vector3 translation = Direction * speed * speedMultiplier * delta*powerBoost;
             _transform.Translate(translation);
         }
         else

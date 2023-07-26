@@ -1,0 +1,900 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 65447 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/UnityProjects/BackrollRoyale/PacManFusion
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+8348
+Successfully changed project path to: C:/UnityProjects/BackrollRoyale/PacManFusion
+C:/UnityProjects/BackrollRoyale/PacManFusion
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 186.83 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityProjects/BackrollRoyale/PacManFusion/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2503)
+    Vendor:   NVIDIA
+    VRAM:     12129 MB
+    Driver:   31.0.15.3598
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009435 seconds.
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 174.28 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Domain Reload Profiling:
+	ReloadAssembly (750ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (566ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (103ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (384ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (65ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (174ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (97ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.020628 seconds.
+Android Extension - Scanning For ADB Devices 4480 ms
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\BackrollRoyale\PacManFusion\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\BackrollRoyale\PacManFusion\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 168.51 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  8.913 seconds
+Domain Reload Profiling:
+	ReloadAssembly (8914ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (8492ms)
+			LoadAssemblies (5885ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (847ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (1607ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (169ms)
+				BeforeProcessingInitializeOnLoad (146ms)
+				ProcessInitializeOnLoadAttributes (483ms)
+				ProcessInitializeOnLoadMethodAttributes (773ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.66 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6964 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (1.0 MB). Loaded Objects now: 7472.
+Memory consumption went from 380.1 MB to 379.2 MB.
+Total: 4.620100 ms (FindLiveObjects: 0.607700 ms CreateObjectMapping: 0.212200 ms MarkObjects: 3.351700 ms  DeleteObjects: 0.447500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1616804.445252 seconds.
+  path: Assets/JapaneseOldTown
+  artifactKey: Guid(98e7c2fddf6e7764eaaceb7df7217025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown using Guid(98e7c2fddf6e7764eaaceb7df7217025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e02554c4598dcfd3cf8688f3a259db53') in 0.019482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/___www.unityassetcollection.com___.txt
+  artifactKey: Guid(c1b0e9b1f04ac4f438cc70399790d144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/___www.unityassetcollection.com___.txt using Guid(c1b0e9b1f04ac4f438cc70399790d144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aff6e1bc76e2aba7e3d43bd2320dd3e0') in 0.037047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/JapaneseOldTown/Prefab
+  artifactKey: Guid(3b4404e69be2a514a9c7c1d4603f4a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab using Guid(3b4404e69be2a514a9c7c1d4603f4a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906d6f90677f5e905e53d3617d80d4a4') in 0.007338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_H_Corner.prefab
+  artifactKey: Guid(a6cde872cb9697e488f81f8f644dd24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_H_Corner.prefab using Guid(a6cde872cb9697e488f81f8f644dd24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e036669490de80b179144bf54eac9467') in 0.211966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14472.168158 seconds.
+  path: Assets/ATART/MonsterVol.1
+  artifactKey: Guid(e5930ba2efe5c584fbe59acec99c46d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1 using Guid(e5930ba2efe5c584fbe59acec99c46d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b64ae937f155da662c6b42afbd9703e') in 0.008166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.410063 seconds.
+  path: Assets/ATART/MonsterVol.1/Boar
+  artifactKey: Guid(8c69761042d673842a9da351ab54e624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Boar using Guid(8c69761042d673842a9da351ab54e624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6100e03619803d43129ef0211a28139f') in 0.007614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.615860 seconds.
+  path: Assets/ATART/MonsterVol.1/Goblin
+  artifactKey: Guid(d91815a53c65a8a45b9f8f349cd90ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Goblin using Guid(d91815a53c65a8a45b9f8f349cd90ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a5b443c084abdef7aa74f6cd486fe2b') in 0.009378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.578432 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime
+  artifactKey: Guid(df75377749113b342853b023c390bdf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime using Guid(df75377749113b342853b023c390bdf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94438c1ea542b619116404bdd67ce49b') in 0.008965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.742619 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Slime.unity
+  artifactKey: Guid(5df2b28f2d55e474397474a093e17a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Slime.unity using Guid(5df2b28f2d55e474397474a093e17a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13f4f5451e82817289460eb3af3a2f6') in 0.007667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.777948 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Attack1.FBX
+  artifactKey: Guid(6cc831047e794ae44b98f5f2133b47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Attack1.FBX using Guid(6cc831047e794ae44b98f5f2133b47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40aa930f7a072f2398891d7dfd3444c4') in 0.117184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.758964 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Jump_In.FBX
+  artifactKey: Guid(95a5b9f5293ce6746a572a2d75b09594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Jump_In.FBX using Guid(95a5b9f5293ce6746a572a2d75b09594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e50328c351da94ad0e004d60227641cd') in 0.033587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.415093 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Jump_Out.FBX
+  artifactKey: Guid(aff1d3ff0f18c9b45b33e6a2b109c2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Jump_Out.FBX using Guid(aff1d3ff0f18c9b45b33e6a2b109c2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b04b6f9e25ca8443b24b220b384f87') in 0.032119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.987882 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Idle2.FBX
+  artifactKey: Guid(56dff13e8f7ecf94c9cb9bab6c43d7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Idle2.FBX using Guid(56dff13e8f7ecf94c9cb9bab6c43d7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f2bd81a3b20b50fbaaba66957c1c79') in 0.030883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.879839 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Idle1.FBX
+  artifactKey: Guid(7731356ec9797d047af8c22579455ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Idle1.FBX using Guid(7731356ec9797d047af8c22579455ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f56dd544ccf826dc2ed9518ae9caa4d') in 0.032596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.729583 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Run.FBX
+  artifactKey: Guid(f048e88fffd504843ba07c710e960b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Run.FBX using Guid(f048e88fffd504843ba07c710e960b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8656fa23ceab9d42b193868be5927f') in 0.030955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.686764 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Walk.FBX
+  artifactKey: Guid(72760ba4f8f8413438b295d0fb82fe5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Walk.FBX using Guid(72760ba4f8f8413438b295d0fb82fe5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd1c9ad3b0c86a638c86caab262ec218') in 0.032374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27548.076028 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Spawn.FBX
+  artifactKey: Guid(5908744ee543a2c4cab0b63acd8be9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Animations/Slime@Spawn.FBX using Guid(5908744ee543a2c4cab0b63acd8be9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d0a80ab3864506262c36ac92255e2bc') in 0.073156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.050032 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Materials
+  artifactKey: Guid(8cbdb319f47b17b42b69da8f1a42570a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Materials using Guid(8cbdb319f47b17b42b69da8f1a42570a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90820e1198b071bf6e35531e317e9807') in 0.007879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.044431 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Textures/Slime01.tga
+  artifactKey: Guid(2181e031576f9cb448a756a4c9f359bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Textures/Slime01.tga using Guid(2181e031576f9cb448a756a4c9f359bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a684708228b25a6d4b4456dc275eac4b') in 0.020761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 261.614842 seconds.
+  path: Assets/FlatKit
+  artifactKey: Guid(6a630ba51f7144adfb85c76b24c29c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlatKit using Guid(6a630ba51f7144adfb85c76b24c29c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ac6f096501152e78b28a8c74868565') in 0.008148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.941606 seconds.
+  path: Assets/FlatKit/Utils/Readme/Editor
+  artifactKey: Guid(e10100cd3416a421cb4aeecbe8f8fab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlatKit/Utils/Readme/Editor using Guid(e10100cd3416a421cb4aeecbe8f8fab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff29317d61c6ca6af67091e2fdfcaa0') in 0.007579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.138738 seconds.
+  path: Assets/FlatKit/[Render Pipeline] Built-In.unitypackage
+  artifactKey: Guid(f4227764308e84f89a765fbf315e2945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlatKit/[Render Pipeline] Built-In.unitypackage using Guid(f4227764308e84f89a765fbf315e2945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0beb4630713c9098b073cd9de684d3b6') in 0.009996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.583557 seconds.
+  path: Assets/FlatKit/[Readme].asset
+  artifactKey: Guid(56f504eeac6f64677b83cfa9ff99292a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlatKit/[Readme].asset using Guid(56f504eeac6f64677b83cfa9ff99292a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7bfc6554282211a4bf3c5382f0dbb28') in 0.011257 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.022093 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\BackrollRoyale\PacManFusion\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\BackrollRoyale\PacManFusion\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.91 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Main-RenderPipeline_Renderer is missing RendererFeatures
+This could be due to missing scripts or compile error.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogError (object,UnityEngine.Object)
+UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs:181)
+UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs:76)
+UnityEngine.Rendering.Universal.UniversalRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/UniversalRendererData.cs:242)
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs Line: 181)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.635 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1636ms)
+		BeginReloadAssembly (207ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1325ms)
+			LoadAssemblies (164ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (474ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (515ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (319ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 6.95 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6688 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 95 unused Assets / (2.2 MB). Loaded Objects now: 7548.
+Memory consumption went from 369.2 MB to 367.0 MB.
+Total: 5.171100 ms (FindLiveObjects: 0.552500 ms CreateObjectMapping: 0.192400 ms MarkObjects: 3.482300 ms  DeleteObjects: 0.942800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 16.10 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 94 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 94 unused Assets / (2.2 MB). Loaded Objects now: 7548.
+Memory consumption went from 233.1 MB to 231.0 MB.
+Total: 4.895400 ms (FindLiveObjects: 0.541100 ms CreateObjectMapping: 0.191100 ms MarkObjects: 3.123400 ms  DeleteObjects: 1.038900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  colorSpace: 1 -> 0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/active-color-space: 03000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 877.559622 seconds.
+  path: Assets/ATART/MonsterVol.1/Slime/Textures/Slime01.tga
+  artifactKey: Guid(2181e031576f9cb448a756a4c9f359bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ATART/MonsterVol.1/Slime/Textures/Slime01.tga using Guid(2181e031576f9cb448a756a4c9f359bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85d3adeb5aaea7bcf2ccecb9388248a') in 0.074147 seconds 
+========================================================================
+Received Prepare
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 22.91 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 94 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 94 unused Assets / (2.2 MB). Loaded Objects now: 7548.
+Memory consumption went from 233.2 MB to 231.0 MB.
+Total: 6.615600 ms (FindLiveObjects: 0.575200 ms CreateObjectMapping: 0.192200 ms MarkObjects: 4.633800 ms  DeleteObjects: 1.213500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  colorSpace: 1 -> 0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: 551ea9813040f695a4b383b6c6db3b9c -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/active-color-space: 03000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015563 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\BackrollRoyale\PacManFusion\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\BackrollRoyale\PacManFusion\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.83 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Main-RenderPipeline_Renderer is missing RendererFeatures
+This could be due to missing scripts or compile error.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogError (object,UnityEngine.Object)
+UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs:181)
+UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs:76)
+UnityEngine.Rendering.Universal.UniversalRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/UniversalRendererData.cs:242)
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/ScriptableRendererData.cs Line: 181)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.236 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1236ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (998ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (295ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (478ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (296ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 6.94 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6689 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 94 unused Assets / (2.2 MB). Loaded Objects now: 7551.
+Memory consumption went from 369.2 MB to 367.0 MB.
+Total: 4.770400 ms (FindLiveObjects: 0.534600 ms CreateObjectMapping: 0.192400 ms MarkObjects: 3.028500 ms  DeleteObjects: 1.013900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  colorSpace: 1 -> 0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: 551ea9813040f695a4b383b6c6db3b9c -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/active-color-space: 03000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 672.316511 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Entrance.prefab
+  artifactKey: Guid(70a8d6d71e51f454f970ef7974aff0f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Entrance.prefab using Guid(70a8d6d71e51f454f970ef7974aff0f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ad319ac05d17647cbdad0c78c2773a') in 0.211826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.786842 seconds.
+  path: Assets/JapaneseOldTown/Textures
+  artifactKey: Guid(098a7a1a894c49047a0c3985fda065f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Textures using Guid(098a7a1a894c49047a0c3985fda065f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d64d0c632bf61ea9723c24d7a0e3c2b') in 0.007730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.234380 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Bonfire.prefab
+  artifactKey: Guid(a2561e821e7eb464f82f33afc2c18e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Bonfire.prefab using Guid(a2561e821e7eb464f82f33afc2c18e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab0d96747ff780df21ec014344989961') in 0.017440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.144284 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_In_B.prefab
+  artifactKey: Guid(acc36e37acb3a8340acf21bc43d0ae97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_In_B.prefab using Guid(acc36e37acb3a8340acf21bc43d0ae97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e2b248d6d001cf1e301b78246813700') in 0.016168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2579.108120 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_H.prefab
+  artifactKey: Guid(38cea97e92a12b347b1104a020765e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_H.prefab using Guid(38cea97e92a12b347b1104a020765e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cffed6ca26e4c9881905565cc3769c') in 0.021176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.694234 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_H_Door_B.prefab
+  artifactKey: Guid(de8bf893f0766cd469c904bf90ca7b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_H_Door_B.prefab using Guid(de8bf893f0766cd469c904bf90ca7b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e092201cd020a499b2d1a961870d11af') in 0.017286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.776683 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_H_low.prefab
+  artifactKey: Guid(9fea10c2bc761014dbcfcb652e744c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_H_low.prefab using Guid(9fea10c2bc761014dbcfcb652e744c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ffdb464b32e7a95c20542af326d5fbc') in 0.016861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.487082 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_H_Door_A.prefab
+  artifactKey: Guid(eac3fe2a5378b4e45b026e4a696665d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_H_Door_A.prefab using Guid(eac3fe2a5378b4e45b026e4a696665d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2847843e302d3a133365723b36104d71') in 0.016742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.627612 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Bonfire_lit.prefab
+  artifactKey: Guid(2943c8252c7af424ba7e5fc0df158f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Bonfire_lit.prefab using Guid(2943c8252c7af424ba7e5fc0df158f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32c141984a5b4692e170c8820ac0ef1') in 0.072111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.678304 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Bridge_B.prefab
+  artifactKey: Guid(fff237219695b554d81dfdcf43bdac42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Bridge_B.prefab using Guid(fff237219695b554d81dfdcf43bdac42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b097bc1ddb608aa783ebdcec82004ae') in 0.016831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.888666 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Bridge_A.prefab
+  artifactKey: Guid(d4953e0661de620428faddc519b8beef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Bridge_A.prefab using Guid(d4953e0661de620428faddc519b8beef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b64b6397028d8ad23cad2ae07b045a80') in 0.015615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.692546 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_L.prefab
+  artifactKey: Guid(0bd5db7f5ad651b4fbd86bce84b825ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_L.prefab using Guid(0bd5db7f5ad651b4fbd86bce84b825ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0480b6af4f53211e9265d88ab31e00') in 0.020562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.525534 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_L_Door_B.prefab
+  artifactKey: Guid(f592d029ffd08a04180e87fa0efd03e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_L_Door_B.prefab using Guid(f592d029ffd08a04180e87fa0efd03e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '990fdd09b55002b38a77a3cf66ee5874') in 0.016477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.564230 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_H.prefab
+  artifactKey: Guid(faaed7114c6391345832a98c06b1a2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_H.prefab using Guid(faaed7114c6391345832a98c06b1a2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691c51dcb5ca7452b31e3d3c764912c5') in 0.016285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.656919 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_H_Corner_low.prefab
+  artifactKey: Guid(d83e0e819fa9d7b4ea233f8ecdf433da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_H_Corner_low.prefab using Guid(d83e0e819fa9d7b4ea233f8ecdf433da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6a31c74e4b4cbcbeb5182039c17e227') in 0.017941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.679649 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_A.prefab
+  artifactKey: Guid(ecf9b772e65d557438fad71e2eb00b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_A.prefab using Guid(ecf9b772e65d557438fad71e2eb00b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bac08ed411d7388a32cae5b18b09d05') in 0.017545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.832799 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Environment/Env_Forest_A.prefab
+  artifactKey: Guid(f688c931c103f274a8ed04fad4999361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Environment/Env_Forest_A.prefab using Guid(f688c931c103f274a8ed04fad4999361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c4aca093950bf4573274632d76005c') in 0.018239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 94.231380 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_L_Door_A.prefab
+  artifactKey: Guid(7a875ca701a33374f9c0d0cac92179fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_L_Door_A.prefab using Guid(7a875ca701a33374f9c0d0cac92179fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34224c24fd959eaf8493b79e37639441') in 0.018316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.603495 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_L_low.prefab
+  artifactKey: Guid(caa070f9aaf201142850b82df98a3b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Gate_L_low.prefab using Guid(caa070f9aaf201142850b82df98a3b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348f6faf8a059081150984df271a0e6a') in 0.017340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.458501 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_H_Corner.prefab
+  artifactKey: Guid(a6cde872cb9697e488f81f8f644dd24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_H_Corner.prefab using Guid(a6cde872cb9697e488f81f8f644dd24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91a3799464489fd5e022252e3f5b7ff') in 0.018540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.431409 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_H_low.prefab
+  artifactKey: Guid(4aace118611e27b4389c1fb8e13af940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_H_low.prefab using Guid(4aace118611e27b4389c1fb8e13af940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5245560b5319e13e1ccbfef3f6221efc') in 0.020202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.136175 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_L.prefab
+  artifactKey: Guid(2c322311d434e814da6ba26f3f965c3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_L.prefab using Guid(2c322311d434e814da6ba26f3f965c3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0d7a55e6aec400fe9538dc368ba129') in 0.017289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.182262 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_L_Corner.prefab
+  artifactKey: Guid(eb1e1c807ace3f44297a256c365cf0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_L_Corner.prefab using Guid(eb1e1c807ace3f44297a256c365cf0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f224242a607e145c64d4fd92a0c1c8') in 0.016311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.149129 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_L_Corner_low.prefab
+  artifactKey: Guid(533d88b1665063f41b23e4602567d47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_L_Corner_low.prefab using Guid(533d88b1665063f41b23e4602567d47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0a97357ad03013110e7063d07876c0') in 0.018854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.104883 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_L_low.prefab
+  artifactKey: Guid(24a3e6b667d28304a93d431cc96caf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Castle_Wall_L_low.prefab using Guid(24a3e6b667d28304a93d431cc96caf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48055f8409d4adbbfb65e2354cc29678') in 0.017268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.132330 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Bottle.prefab
+  artifactKey: Guid(be9f1283320fd6e4db7d930f539a38a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Bottle.prefab using Guid(be9f1283320fd6e4db7d930f539a38a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3309ece475199392d3568a1141b038f4') in 0.017294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.148656 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Bowl_A.prefab
+  artifactKey: Guid(11a6810af8830f545b132e5bb3cdb134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Bowl_A.prefab using Guid(11a6810af8830f545b132e5bb3cdb134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9538e106550de50d28cb2dce1c1b1f48') in 0.017145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.155350 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Bowl_B.prefab
+  artifactKey: Guid(981178e7b8a68a04a9d20bd710fc2d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Bowl_B.prefab using Guid(981178e7b8a68a04a9d20bd710fc2d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '150bc372de4fd7b2d614dbdb802afeb6') in 0.018611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.170924 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Bowl_C.prefab
+  artifactKey: Guid(2a030d6e4649a9546970bb3aec23067d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Bowl_C.prefab using Guid(2a030d6e4649a9546970bb3aec23067d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e40accc2c2d52d88d5708d47c77f33') in 0.015669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.447149 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Bucket.prefab
+  artifactKey: Guid(5ea6593a225f04343be777fcc53cc048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Bucket.prefab using Guid(5ea6593a225f04343be777fcc53cc048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc782f9eacb13741d831ffa882d3282b') in 0.016648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.131309 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Cat_Figure.prefab
+  artifactKey: Guid(e00cedfbe1a0258418412ef33320a118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Cat_Figure.prefab using Guid(e00cedfbe1a0258418412ef33320a118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '858ad7820d74aef75ef4854bd7360ca7') in 0.016862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.149645 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Chest.prefab
+  artifactKey: Guid(9b9035ea2eb6fef4c85b122facdc0caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Chest.prefab using Guid(9b9035ea2eb6fef4c85b122facdc0caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd81a37e3b01c210ed2e45f3c706b182') in 0.018304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.170722 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Cushion.prefab
+  artifactKey: Guid(6624491c82ee02f40994bfcf7a60305d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Cushion.prefab using Guid(6624491c82ee02f40994bfcf7a60305d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3985090707e75e4b007dcbd0223b58d') in 0.016283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.293508 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Cushion_Pile.prefab
+  artifactKey: Guid(ec4a2725c793b0840a29ca2a01671174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Cushion_Pile.prefab using Guid(ec4a2725c793b0840a29ca2a01671174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f0613c1c4bd8ab031a70eb89d3213fb') in 0.015695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.262023 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Daruma.prefab
+  artifactKey: Guid(598e17b4e3a9ce542be8752fad6964ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Daruma.prefab using Guid(598e17b4e3a9ce542be8752fad6964ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c49439147aeb41ec08c80159c20d708') in 0.016822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.284663 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Desk_A.prefab
+  artifactKey: Guid(b642731862dbe9c44b396a801b38175e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Desk_A.prefab using Guid(b642731862dbe9c44b396a801b38175e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db34a333fc3c920830600d075db5330a') in 0.017194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.395764 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Desk_b.prefab
+  artifactKey: Guid(3882a503cec0fb3488771654ef5ddec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Desk_b.prefab using Guid(3882a503cec0fb3488771654ef5ddec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434631b768d3474b1d8bf6d5d26801b6') in 0.017109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.750262 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_B.prefab
+  artifactKey: Guid(ded188cb083da2240896f045fc23186f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_B.prefab using Guid(ded188cb083da2240896f045fc23186f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c916317ecaa135adfd884d551bf0e048') in 0.016613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.299481 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_In_A.prefab
+  artifactKey: Guid(b8e6527f08d7bf5429b0bb3ca05dd03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_In_A.prefab using Guid(b8e6527f08d7bf5429b0bb3ca05dd03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83cd7d32ddb53d916ed8dc6dbd8add39') in 0.016939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.650607 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_In_Side_A.prefab
+  artifactKey: Guid(0b9a745b8683c3c4e93e8878c5b9f026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_In_Side_A.prefab using Guid(0b9a745b8683c3c4e93e8878c5b9f026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dcaffe10ad650c4aa8963f1bad08323') in 0.017505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.219674 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_In_Side_B.prefab
+  artifactKey: Guid(ae07cfc826cf96849b8726afa659e815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Door_In_Side_B.prefab using Guid(ae07cfc826cf96849b8726afa659e815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f817a8dffb5385beef9f47ff5826101c') in 0.016469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.230030 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Lamp.prefab
+  artifactKey: Guid(fa819fa7ecf091f4d8fc9298925ef1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Lamp.prefab using Guid(fa819fa7ecf091f4d8fc9298925ef1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fceba60a8cce41f2715d1515b3fd196') in 0.017988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.245868 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Lamp_lit.prefab
+  artifactKey: Guid(b26a4e3e9112d0243bb770dc5dd60b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Lamp_lit.prefab using Guid(b26a4e3e9112d0243bb770dc5dd60b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fbe3360b2877df06e5015f44be0d079') in 0.016362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.231646 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Pot.prefab
+  artifactKey: Guid(6185f0bd91ffbf94f81a55fac9a4f0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Pot.prefab using Guid(6185f0bd91ffbf94f81a55fac9a4f0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77920ceec8207cd0a50db8c1c815c598') in 0.017622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.165361 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Shelf.prefab
+  artifactKey: Guid(e341b88fb2f05fb449a12a5b897b115f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Shelf.prefab using Guid(e341b88fb2f05fb449a12a5b897b115f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2b81e2c69edb0253f0f7864674cbb1') in 0.017783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.341045 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Tray.prefab
+  artifactKey: Guid(ac77a49f2266e8641b994e210fe300ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Tray.prefab using Guid(ac77a49f2266e8641b994e210fe300ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a1cc4ca368c5be7c820bbcd1c9d335') in 0.018736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.465741 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Umbrella.prefab
+  artifactKey: Guid(4d19553f9c9770a4592e9a3ed56a7dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_House_Umbrella.prefab using Guid(4d19553f9c9770a4592e9a3ed56a7dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67dd230958cb0bf3c8bcb3790091e1eb') in 0.016268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.428737 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_A.prefab
+  artifactKey: Guid(dd23c07bba82c58429b14fde2d86cc82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_A.prefab using Guid(dd23c07bba82c58429b14fde2d86cc82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70daa7119529ac6fb83cae6da3685f6e') in 0.017124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7877.730970 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_A_lit.prefab
+  artifactKey: Guid(90050a00620a7e5429883ec46586ae76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_A_lit.prefab using Guid(90050a00620a7e5429883ec46586ae76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c8fef41cd1e83e463e8b255b2a8850') in 0.017893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.435254 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_B.prefab
+  artifactKey: Guid(4c601d0a398906b429fd34c23072c5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_B.prefab using Guid(4c601d0a398906b429fd34c23072c5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a71bc1d125764517026257f03909a43') in 0.018619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.155663 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_B_lit.prefab
+  artifactKey: Guid(298abdaa319f39d439121d38945146a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_B_lit.prefab using Guid(298abdaa319f39d439121d38945146a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9a36a8dafa573ee6ed0ca2e9556f22') in 0.016403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.380716 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_B_Red.prefab
+  artifactKey: Guid(7aa40843b12f22c4381035525c796f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_B_Red.prefab using Guid(7aa40843b12f22c4381035525c796f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '669968e4c29d04d3d9dd28b432dd65a1') in 0.016164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.365915 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_B_Red_lit.prefab
+  artifactKey: Guid(6e91628fda37d264c84d5cce4e88df0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_B_Red_lit.prefab using Guid(6e91628fda37d264c84d5cce4e88df0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95542c7317973905f197ba4a04c870b') in 0.017427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.266937 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_C.prefab
+  artifactKey: Guid(c144d11ba6371c24fa25e698f5763470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_C.prefab using Guid(c144d11ba6371c24fa25e698f5763470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b22ecc4985c527f3f30c4a35adbab2e') in 0.016409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.358696 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_C_lit.prefab
+  artifactKey: Guid(2a61733096fb8c54eb29688ad23b926e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_C_lit.prefab using Guid(2a61733096fb8c54eb29688ad23b926e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c07d3e6dcbf96033037368469319ff2') in 0.017991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.275396 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_C_Red.prefab
+  artifactKey: Guid(108ea28c8d8885145896d55dd7b0296e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_C_Red.prefab using Guid(108ea28c8d8885145896d55dd7b0296e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d2cd8b89f56b6962858e47cf62907ad') in 0.020590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.281676 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_C_Red_lit.prefab
+  artifactKey: Guid(7b60f91dea9e58244ab09f465091d241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Lantan_C_Red_lit.prefab using Guid(7b60f91dea9e58244ab09f465091d241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39668658f210e122346f24e7881d2036') in 0.016018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.243395 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_High.prefab
+  artifactKey: Guid(e3c5a156c94b6454e87cc799da12428b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_High.prefab using Guid(e3c5a156c94b6454e87cc799da12428b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a7a34b7a6998e87977e1dfe65ef66a') in 0.016161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.245871 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_High_Corner.prefab
+  artifactKey: Guid(94b7fa427e8ca5c4fa37c1637c253774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_High_Corner.prefab using Guid(94b7fa427e8ca5c4fa37c1637c253774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d963c9791cbac4bc63b58528f3c409d') in 0.015907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.039091 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_Low.prefab
+  artifactKey: Guid(a437fc3ca1ed3ca4e967c72fdb84a7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_Low.prefab using Guid(a437fc3ca1ed3ca4e967c72fdb84a7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2a6046b65a40cb96fc7f0f16d47fdd') in 0.017557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.798984 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_Low_Corner.prefab
+  artifactKey: Guid(92dc6dc80e7abfb45bd77342d7e2cc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_Low_Corner.prefab using Guid(92dc6dc80e7abfb45bd77342d7e2cc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcf6b5b928bb1ddfde8ce64cf411287') in 0.016915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.621060 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_Stone_Pole.prefab
+  artifactKey: Guid(ea7c47ef2c653874dab285a2e3c361b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_Stone_Pole.prefab using Guid(ea7c47ef2c653874dab285a2e3c361b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bcfa0e600d2c4dbeef054a7dcb8924e') in 0.016799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.604708 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_Stone.prefab
+  artifactKey: Guid(439e19f5902aafb4f99e5586b7abb994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_Stone.prefab using Guid(439e19f5902aafb4f99e5586b7abb994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32317d44778b730a626b812bd04072e8') in 0.016714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.418411 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_Stone_Short.prefab
+  artifactKey: Guid(4adb17456b0c0f1409267ee32cadadaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Fence_Stone_Short.prefab using Guid(4adb17456b0c0f1409267ee32cadadaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ba50dc01d5cb784dd51b92354a53ca') in 0.016671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.289190 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Gateway.prefab
+  artifactKey: Guid(5ab98940995c52547ad9b5585ae956f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Gateway.prefab using Guid(5ab98940995c52547ad9b5585ae956f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197a33dccb2918026675ec4a5e46b90f') in 0.017274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.419383 seconds.
+  path: Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Lantan_B.prefab
+  artifactKey: Guid(8489d3a7e0f579d4bac706eb90579ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JapaneseOldTown/Prefab/Prop/Prop_Shrine_Lantan_B.prefab using Guid(8489d3a7e0f579d4bac706eb90579ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6691f0f0db465448c278878758d2269d') in 0.021625 seconds 
